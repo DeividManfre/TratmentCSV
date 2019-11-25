@@ -21,9 +21,9 @@ class tratamento(entrada): #classe de tratamento utiliza por herança a classe e
 		df = pd.DataFrame([ajuste_arquivo], columns=['name','cpf'])
 		return  df
 
-class escrever(tratamento): #classe escrita é a última etapa do codigo onde ele utiliza o retorno do tratamento df "DataFrame" escrever e criar o arquivo CSV
-	
-	def escrevendo():
+class escrever_sair(tratamento): #classe escrita é a última etapa do codigo onde ele utiliza o retorno do tratamento df "DataFrame" escrever e criar o arquivo CSV
+
+	def escrevendo_saida():
 		info = tratamento.tratar()
 		atuais = datetime.datetime.now()
 		nome = atuais.strftime('%d%m%Y%H%M')
