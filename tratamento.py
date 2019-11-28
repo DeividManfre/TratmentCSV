@@ -26,7 +26,7 @@ class escrever_sair(tratamento): #classe escrita é a última etapa do codigo on
 	def escrevendo_saida():
 		info = tratamento.tratar()
 		atuais = datetime.datetime.now()
-		nome = atuais.strftime('%d%m%Y%H%M')
+		nome = atuais.strftime('%d%m%Y%H%M%s')
 		return info.to_csv('final/'+ nome +'.csv')
 
 
