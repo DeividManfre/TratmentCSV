@@ -12,6 +12,7 @@ class o_programa: #Parte simples onde te dá opção de cancelar a execução ou
 		entrada = input('(1) Processar (2)Sair: ')
 
 		if  (entrada == '1'):
+			print('Processado')
 			escrever_sair.escrevendo_saida()
 		else:
 			print('você saiu')
