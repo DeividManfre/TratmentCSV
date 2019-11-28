@@ -11,15 +11,17 @@ class o_programa: #Parte simples onde te dá opção de cancelar a execução ou
 
 		entrada = input('(1) Processar (2)Sair: ')
 
-		while  entrada == '1':
-			o_programa.verificar()
-
+		if  (entrada == '1'):
+			escrever_sair.escrevendo_saida()
 		else:
 			print('você saiu')
 			exit()
 
+while 2 != 1 :
+	o_programa.verificar()
 
-show = o_programa.verificar()
+	
+
 
 
 
